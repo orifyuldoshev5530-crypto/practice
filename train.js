@@ -1,3 +1,8 @@
+// A-TASK
+// Masalaning sharti: Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+// MASALAN countLetter("e", "engineer") 3ni return qiladi.
+
+// MASALANING yechimi:
 function countN(letter, word) {
     let count = 0;
 
