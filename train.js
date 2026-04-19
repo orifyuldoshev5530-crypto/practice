@@ -1,6 +1,7 @@
-// A-TASK
-// Masalaning sharti: Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
-// MASALAN countLetter("e", "engineer") 3ni return qiladi.
+/* A-TASK
+Masalaning sharti: Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi 
+letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 
 // MASALANING yechimi:
 function countN(letter, word) {
@@ -15,16 +16,19 @@ function countN(letter, word) {
 }
 console.log("result:", countN("a", "panda"))
 
-function count1(words) {
-    let total = 0
 
-    for (i = 0; i < words.length; i++) {
-        if (words[i] == "number") {
-            total++
-        }
+/* B-TASK (Nodejs)
+
+Shunday function tuzing, u 1ta string parametrga ega bolsin,
+hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin. */
+
+function countDigits(str) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (/\d/.test(str[i]))
+            count++
     }
-    return total
+    return count;
 }
-
-result1 = count1("sdf234b54")
-console.log(result1)
+console.log("result of count:", countDigits("ps35gv223fg"))
