@@ -44,3 +44,12 @@ else:
     print("Executed successfully without errors")
 finally:
     print("Final closing logic")
+
+''' except (KeyError, AttributeError) as err:
+    print("Error:", err) 
+    
+    Agar har qanday xatolikni handle qilmoqchi bo'lsak, Exception dan foydalanamiz
+
+    except Exception as err:
+        print("Error:", err)
+'''
