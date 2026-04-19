@@ -14,3 +14,17 @@ function countN(letter, word) {
     return count;
 }
 console.log("result:", countN("a", "panda"))
+
+function count1(words) {
+    let total = 0
+
+    for (i = 0; i < words.length; i++) {
+        if (words[i] == "number") {
+            total++
+        }
+    }
+    return total
+}
+
+result1 = count1("sdf234b54")
+console.log(result1)
