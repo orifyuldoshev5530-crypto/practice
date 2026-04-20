@@ -1,4 +1,4 @@
-/* B-TASK (Nodejs)
+/* B-TASK
 
 Savol: Shunday function tuzing, u 1ta string parametrga ega bolsin,
 hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin. */
