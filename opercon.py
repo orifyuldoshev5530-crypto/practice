@@ -44,4 +44,36 @@ print(id(c), id(d))
 
 # Value larni tekshirmoqchi bo'lsak -  ==
 # Reference larni tekshirmoqchi bo'lsak - is
+
 print("==== Conditions ====")
+# elif = else if
+# condition lar True yoki False ligini tekshirmaydi. ular Trusy yoki Falsy ekanligini tekshiradi
+
+x = 15
+
+if x > 50:
+    print("CASE A")
+elif x > 10:
+    print("CASE B")
+else:
+    print("CASE C")
+
+print("-----------")
+
+age = 15
+
+# person = None
+# if age > 18:
+#    person = "Adult"
+# else:
+#    person = "Minor"
+
+
+# Ternary operator
+person = "Adult" if age > 18 else "Minor"
+print("person:", person)
+
+print("----------------")
+
+# or operatorida agar ikki qiymatning hech bolmaganda biri True bolsa, natija True boladi
+# and operatorida esa hech bolmaganda biri False bolsa, natija False boladi.
