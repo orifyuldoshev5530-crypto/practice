@@ -77,3 +77,18 @@ print("----------------")
 
 # or operatorida agar ikki qiymatning hech bolmaganda biri True bolsa, natija True boladi
 # and operatorida esa hech bolmaganda biri False bolsa, natija False boladi.
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = False
+
+if not is_student:
+    print("Welcome here, do you want to be student?")
+elif is_admin:
+    print("Please, go to this office!")
+    # elif is_guest or is_parent:
+elif is_parent or is_guest:
+    print("waiting room is over there!")
+else:
+    print("Other cases")
