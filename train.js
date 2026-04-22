@@ -1,7 +1,19 @@
+/* C-TASK 
+
+Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
+
+// Masalaning yechimi:
+function checkContent(a, b) {
+    return a.split('').sort().join() === b.split('').sort().join()
+}
+let result = checkContent("bahor", "roabh")
+console.log("result:", result)
+
 /* B-TASK
 
 Savol: Shunday function tuzing, u 1ta string parametrga ega bolsin,
-hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin. */
+hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 
 // MASALANING yechimi:
 function countDigits(str) {
@@ -13,7 +25,7 @@ function countDigits(str) {
     }
     return count;
 }
-console.log("result of count:", countDigits("ps35gv223fg"))
+console.log("result of count:", countDigits("ps35gv223fg")) */
 
 // =====================================================================
 
