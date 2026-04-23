@@ -1,7 +1,32 @@
-/* C-TASK 
+/* D-TASK 
+
+Savol: Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
+
+// Masalaning yechimi:
+
+function getIndex(arr) {
+    let max = arr[0];
+    let index = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    return index;
+}
+
+console.log(getIndex([23, 6, 32, 17, 61, 55]));
+
+
+// ============================================================
+
+/* C-TASK
 
 Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
-MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 
 // Masalaning yechimi:
 
@@ -9,7 +34,7 @@ function checkContent(a, b) {
     return a.split('').sort().join() === b.split('').sort().join()
 }
 let result = checkContent("bahor", "roabh")
-console.log("result:", result)
+console.log("result:", result) */
 
 // ============================================================
 
