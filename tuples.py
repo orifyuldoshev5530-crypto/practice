@@ -43,3 +43,65 @@ print(animals[0])
 # bazida Tuple larning qavsini yozmasligimiz ham mumkin
 
 # git - "feat: learn tuple and list"
+
+print("----------------- TYPLE (*args) -------------------")
+print("======     Unpacking arguments    =======")
+# boshqa tillardagi distruction yani qiymatlarni yoyish Python da typle orqali amalga oshiriladi
+
+group = ["MIT", "FELIXY", "DEVEX", "MG"]
+(x, y, *z) = group  # *z buyerda x va y dan qolgan "DEVEX" va "MG" qiymatlarini olayapti
+print(f"the x: {x} and y: {y}")
+print("z:", z)  # list
+
+
+# *args va **kwargs - qachonki bizga berilayotgan argumentlarning miqdori noaniq bolsa, ishlatilinadi
+
+#  *args > tuple
+def calculate(*args):
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the total value: {total}")
+    return total
+
+
+# call
+calculate(1, 7, 2, 3)
+print("--------")
+calculate(0, 2, 300)
+print("----------")
+calculate(5, 7)
+
+
+print("-------  **kwargs --------")
+# kwargs > dictionary
+
+
+def introduce(**kwargs):
+    print(f"the type(**kwargs) value: {type(kwargs)}")
+    print(f"Hi, I am {kwargs["name"]} and I am {kwargs["age"]} years old")
+
+
+# Call
+introduce(name="Justin", age=28)
+introduce(name="Shawn", age=30, single=True)
+print("----------")
+
+
+def greeting(*args, **kwargs):
+    print("*args:", args)
+    print("**kwargs:", kwargs)
+
+
+# Call
+greeting("Hi,", True, 10, name="John", age=22)
+
+
+print("=====  zip  ======")
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+print("zipped", zipped)
+result = list(zipped)
+print(f"the result:, {result}")
