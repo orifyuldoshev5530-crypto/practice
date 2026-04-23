@@ -4,11 +4,14 @@ Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
 
 // Masalaning yechimi:
+
 function checkContent(a, b) {
     return a.split('').sort().join() === b.split('').sort().join()
 }
 let result = checkContent("bahor", "roabh")
 console.log("result:", result)
+
+// ============================================================
 
 /* B-TASK
 

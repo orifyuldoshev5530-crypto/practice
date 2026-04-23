@@ -51,8 +51,8 @@ my_account.deposit(3500)
 my_account.withdraw(400)
 my_account.get_balance()
 
-my_account.owner = "Martin"
-my_account.amount = 10000000
+my_account.__owner = "Martin"
+my_account.__amount = 10000000
 my_account.get_balance()
 
 print("--------------")
