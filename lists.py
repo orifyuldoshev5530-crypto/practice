@@ -92,3 +92,26 @@ print("sort reverse:", numbers)
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)  # immutable holatda sort qilib beradi
 print(f"the sorted numbs {numbs} and nuw_numbs: {new_numbs}")
+
+
+print("---------------------------")
+# lamda is small anonimous function
+def calculate(x, y): return x * y
+
+
+result = calculate(3, 5)
+print("result:", result)
+
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 25),
+    ("Michael", 30),
+    ("Ali", 41),
+]
+people.sort()
+print("people(1)", people)
+
+# sort by age via lambda
+people.sort(key=lambda people: people[1])
+print("people(2)", people)
