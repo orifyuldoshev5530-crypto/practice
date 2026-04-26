@@ -41,7 +41,7 @@ while numb > 0:
 
 print("--------")
 count = 0
-while True:
+while True:  # bu javascript dagi "do while" mantig'i yani hech bolmaganda 1 marta ishga tush degani
     count += 1
     x = int(input("Find number:"))
 
